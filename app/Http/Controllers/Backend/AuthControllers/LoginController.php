@@ -20,10 +20,10 @@ class LoginController extends Controller
     /*show login form*/
     public function getLogin(){
         /*check if user logged in then return to dashboard*/
-        if(Auth::guard('admin')->user()){
-            return redirect()->route('backend.admin.dashboard')
-                ->with('warning', 'You are already logged in');
-        }
+//        if(Auth::guard('admin')->user()){
+//            return redirect()->route('backend.admin.dashboard')
+//                ->with('warning', 'You are already logged in');
+//        }
 
         /*create & set common data array*/
         $common_data = new Array_();
